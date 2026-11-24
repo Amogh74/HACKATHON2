@@ -1,0 +1,79 @@
+[
+  {
+    "rule_id": "RBI-DL-01",
+    "regulator": "Reserve Bank of India (RBI)",
+    "statute": "Guidelines on Digital Lending, Section 4.1 - Data Privacy & Hardware Access",
+    "title": "Strict Prohibition on Accessing Mobile Contacts, Call Logs, and Storage",
+    "summary": "Digital lending apps and LSPs are strictly prohibited from accessing mobile phone resources such as contact lists, call logs, telephony logs, SMS data, media files, or photo galleries. Only one-time camera/microphone access for explicit KYC is permissible.",
+    "severity": "CRITICAL",
+    "keywords": ["contact", "contacts", "phonebook", "gallery", "photos", "storage", "sms", "call log", "device data", "media files"],
+    "borrower_alert": "DANGER: This app is demanding access to your private phone contacts and photo gallery. Predatory apps use this to blackmail borrowers and harass your family or friends.",
+    "lender_remediation": "Delete all clauses requesting access to contacts, storage, or call logs. Restrict app permissions strictly to one-time KYC camera/location access in accordance with RBI DL Section 4.1."
+  },
+  {
+    "rule_id": "RBI-DL-02",
+    "regulator": "Reserve Bank of India (RBI)",
+    "statute": "Guidelines on Digital Lending, Section 5.2 - Key Fact Statement (KFS) & APR",
+    "title": "Mandatory Key Fact Statement (KFS) & Standardized APR Disclosure",
+    "summary": "Lenders must provide a standardized Key Fact Statement (KFS) before contract execution. The Annual Percentage Rate (APR) must disclose the all-inclusive cost of the digital loan (processing fees, verification charges, insurance, late penalties), not just a deceptively low daily or monthly interest figure.",
+    "severity": "CRITICAL",
+    "keywords": ["kfs", "key fact statement", "apr", "annual percentage rate", "daily interest", "processing fee", "platform fee", "hidden charges"],
+    "borrower_alert": "WARNING: Hidden cost trap! The lender is not disclosing the real Annual Percentage Rate (APR) or is masking 100%+ annual interest behind small 'daily fees' or high upfront deduction fees.",
+    "lender_remediation": "Incorporate a standardized Key Fact Statement (KFS) table in Annexure-I explicitly stating the calculated APR, total cost of credit, and itemized processing fees."
+  },
+  {
+    "rule_id": "RBI-DL-03",
+    "regulator": "Reserve Bank of India (RBI)",
+    "statute": "Guidelines on Digital Lending, Section 3.1 - Direct Fund Flow & Pass-through Prohibition",
+    "title": "Direct Account-to-Account Disbursal and Repayment",
+    "summary": "All loan disbursals must be made directly into the verified bank account of the borrower, and all repayments must be executed directly into the bank account of the Regulated Entity (RE/Bank/NBFC). Disbursal or collection via third-party wallets, personal UPI handles, or unregulated intermediary pool accounts is illegal.",
+    "severity": "CRITICAL",
+    "keywords": ["third-party", "wallet", "upi id", "pool account", "intermediary", "payment link", "crypto", "agent account", "cash collection"],
+    "borrower_alert": "DANGER: The loan agreement instructs you to pay back to an unverified third-party account or personal UPI handle. You could lose your money with no legal proof of repayment.",
+    "lender_remediation": "Specify that all loan servicing, disbursements, and repayments occur directly between the borrower's KYC-verified bank account and the licensed Regulated Entity (RE) escrow/operating account."
+  },
+  {
+    "rule_id": "RBI-DL-04",
+    "regulator": "Reserve Bank of India (RBI)",
+    "statute": "Guidelines on Digital Lending, Section 6.1 - Cooling-Off / Look-Up Period",
+    "title": "Mandatory Cooling-Off / Look-Up Exit Period",
+    "summary": "Borrowers must be given an explicit cooling-off / look-up period (at least 3 days for loans with tenure of 7 days or more, and 1 day for shorter tenures) during which the borrower can exit the digital loan without any penalty by repaying the principal and proportionate APR.",
+    "severity": "HIGH",
+    "keywords": ["cooling-off", "look-up period", "exit option", "cancellation period", "cancellation penalty", "immediate lock-in"],
+    "borrower_alert": "UNFAIR TERMS: This agreement omits or denies the legally mandated 3-day cooling-off window. By law, you have the right to cancel and return the loan without paying extortionate penalty fees.",
+    "lender_remediation": "Insert explicit Cooling-Off clause granting borrowers at least 3 calendar days to exit the facility upon returning principal plus pro-rata APR without prepayment penalties."
+  },
+  {
+    "rule_id": "RBI-DL-05",
+    "regulator": "Reserve Bank of India (RBI)",
+    "statute": "Guidelines on Digital Lending, Section 7.3 - Grievance Redressal Mechanism",
+    "title": "Mandatory Nodal Grievance Redressal Officer Disclosure",
+    "summary": "Digital lending agreements must prominently state the name, direct contact phone number, designated email address, and physical office address of the Nodal Grievance Redressal Officer (GRO), along with an escalation matrix to the RBI Ombudsman if complaints are unresolved within 30 days.",
+    "severity": "HIGH",
+    "keywords": ["grievance", "redressal officer", "complaints", "ombudsman", "nodal officer", "escalation", "customer support"],
+    "borrower_alert": "RISK: There is no designated Grievance Officer or formal complaint escalation contact listed. If anything goes wrong or unauthorized deductions happen, you have no registered point of contact.",
+    "lender_remediation": "Provide the full name, official email, direct telephone number, and physical office address of the dedicated Nodal Grievance Redressal Officer and 30-day escalation pathway to the RBI Ombudsman."
+  },
+  {
+    "rule_id": "RBI-DL-06",
+    "regulator": "Reserve Bank of India (RBI)",
+    "statute": "Guidelines on Digital Lending, Section 8.2 - Fair Recovery Practices & Anti-Harassment",
+    "title": "Strict Prohibition on Intimidation, Harassment, and Social Recovery",
+    "summary": "Lenders and collection agents are strictly barred from harassment, public shaming, calling third parties or employers, making threatening communications, or contacting borrowers outside the hours of 8:00 AM to 7:00 PM.",
+    "severity": "CRITICAL",
+    "keywords": ["recovery agent", "employer", "workplace", "family", "guarantor", "harassment", "shaming", "visitation", "late night calls", "recovery rights"],
+    "borrower_alert": "SEVERE WARNING: The lender reserves rights to contact your employer, relatives, or send recovery agents to your home without notice. This is completely illegal under regulatory Fair Practice codes.",
+    "lender_remediation": "Amend recovery procedures to comply with the RBI Fair Practices Code: recovery contacts strictly limited to borrower, restricted between 08:00 and 19:00, with zero third-party disclosure."
+  },
+  {
+    "rule_id": "RBI-DL-07",
+    "regulator": "Reserve Bank of India (RBI)",
+    "statute": "Guidelines on Digital Lending, Section 5.4 - Credit Limit Enhancement",
+    "title": "Prohibition on Automatic / Unilateral Credit Limit Increase",
+    "summary": "No automatic increase in credit limit is permitted. Any upward revision of sanctioned credit limit requires explicit, recorded affirmative consent from the borrower on each occasion.",
+    "severity": "MEDIUM",
+    "keywords": ["automatic increase", "unilateral limit", "credit line increase", "discretion to increase", "auto-renewal"],
+    "borrower_alert": "WATCH OUT: The lender claims the right to increase your credit limit and charges without asking for your approval first. This can push you into debt traps.",
+    "lender_remediation": "Remove automatic credit line enhancement clauses. State that any limit upgrade requires explicit, written/digital borrower consent."
+  }
+]

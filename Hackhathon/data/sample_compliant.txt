@@ -1,0 +1,37 @@
+KEY FACT STATEMENT (KFS) & DIGITAL LOAN SANCTION CONTRACT
+Regulated Entity: Apex Urban Commercial Bank Limited (Licensed RBI RE / Scheduled Commercial Bank)
+Digital Lending Partner (LSP): ApexDirect Digital Services Ltd
+
+PART A: KEY FACT STATEMENT (RBI MANDATORY FORMAT)
+1. Sanctioned Loan Amount: INR 100,000.00
+2. Net Disbursed Amount: INR 98,230.00 (Processing Fee INR 1,500 + 18% GST INR 270 deducted)
+3. Annual Percentage Rate (APR): 14.85% p.a. (Inclusive of all interest, processing fees, and documentation costs)
+4. Loan Tenure: 12 Months (Equated Monthly Installment: INR 9,021.00)
+5. Total Amount to be Repaid: INR 108,252.00
+6. Cooling-off / Look-up Period: 3 (Three) Business Days from the date of disbursal. During this window, the borrower may terminate the facility without any prepayment charges or penalty, subject only to refunding principal plus pro-rata APR.
+
+PART B: OPERATING CLAUSES & REGULATORY UNDERTAKINGS
+
+CLAUSE 1: DISBURSEMENT & DIRECT REPAYMENT FLOW
+1.1 Disbursal of the loan proceeds shall be made strictly and directly from Apex Urban Commercial Bank Limited to the verified savings bank account of the Borrower via NEFT/RTGS/IMPS.
+1.2 All EMI repayments and prepayments shall be credited directly to the loan account maintained at Apex Urban Commercial Bank Limited via e-NACH mandate or official UPI collect requests originating from the Bank's registered handle @apexbank. No third-party or intermediary pool accounts are permitted.
+
+CLAUSE 2: DATA PRIVACY & ZERO PHONE ACCESS POLICY
+2.1 The ApexDirect mobile application adheres strictly to the RBI Digital Lending Directions (2022). The application does not collect, read, or request access to the Borrower's contact list, call logs, SMS records, media files, or photo storage.
+2.2 Camera and microphone access is requested strictly once and in real-time solely for the purpose of completing Video Customer Identification Process (V-CIP) KYC.
+
+CLAUSE 3: FAIR RECOVERY & ETHICAL PRACTICES
+3.1 The Bank and its impaneled recovery agencies adhere strictly to the RBI Fair Practices Code.
+3.2 Recovery representatives shall never contact any third parties, employers, family members, or references regarding debt recovery. All communications are strictly restricted between 08:00 hrs and 19:00 hrs on working days. Intimidation, verbal abuse, or harassment is strictly forbidden.
+
+CLAUSE 4: CREDIT LIMIT POLICIES
+4.1 The sanctioned credit limit shall not be enhanced automatically under any circumstance. Any enhancement requires explicit, affirmative, and recorded consent of the Borrower prior to revision.
+
+CLAUSE 5: GRIEVANCE REDRESSAL MECHANISM
+5.1 Principal Nodal Grievance Redressal Officer:
+    Name: Mr. Rajeshwar Sharma
+    Designation: Chief Customer Service & Nodal Grievance Officer
+    Address: Apex Towers, 4th Floor, Sector 18, Cyber City, Gurugram - 122002
+    Direct Telephone: 1800-425-9988 / 0124-4902100
+    Dedicated Email: nodal.grievance@apexbank.in
+5.2 Grievance Turnaround Time (TAT) is 15 business days. If a complaint is not redressed within 30 days, the Borrower has the right to escalate directly to the RBI Integrated Ombudsman via https://cms.rbi.org.in.

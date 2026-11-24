@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LoanLens - Agentic Digital Lending Compliance Checker</title>
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/styles.css">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+              900: '#1e1b4b'
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col antialiased selection:bg-indigo-500 selection:text-white">
+
+  <!-- Top Navbar -->
+  <header class="glass-panel border-b border-slate-800 sticky top-0 z-40 px-6 py-3">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-3">
+      <!-- Logo & Tagline -->
+      <div class="flex items-center space-x-3">
+        <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-indigo-600 to-violet-500 flex items-center justify-center shadow-lg shadow-indigo-500/30">
+          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+        </div>
+        <div>
+          <div class="flex items-center space-x-2">
+            <h1 class="text-base font-bold tracking-tight bg-gradient-to-r from-white via-indigo-200 to-indigo-400 bg-clip-text text-transparent">LoanLens</h1>
+            <span class="text-[10px] px-2 py-0.5 rounded-full bg-indigo-500/20 text-indigo-300 font-mono border border-indigo-500/30">Agentic AI v2.4</span>
+          </div>
+          <p class="text-[11px] text-slate-400">Zero-Hallucination Regulatory Compliance Shield for Digital Lending</p>
+        </div>
+      </div>
+
+      <!-- Center & Right Controls -->
+      <div class="flex items-center space-x-4">
+        <!-- Persona Switcher -->
+        <div class="flex items-center bg-slate-900/90 p-1 rounded-xl border border-slate-800">
+          <button id="btn-mode-borrower" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-indigo-600 text-white shadow">
+            Borrower Shield
+          </button>
+          <button id="btn-mode-lender" class="px-3 py-1.5 rounded-lg text-xs font-medium text-slate-300 hover:bg-slate-700/50">
+            Lender Compliance
+          </button>
+        </div>
+
+        <!-- Export Report -->
+        <button id="btn-export-report" class="flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition">
+          <svg class="w-3.5 h-3.5 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+          <span>Export Audit</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contract Selection & Demo Presets Bar -->
+  <div class="bg-slate-900/60 border-b border-slate-800/80 px-6 py-2.5">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center space-x-2">
+        <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Demo Presets:</span>
+        <button id="btn-preset-predatory" class="px-2.5 py-1 text-xs rounded-lg bg-slate-800 hover:bg-slate-700 text-red-400 border border-red-500/30 flex items-center space-x-1.5 transition">
+          <span class="w-2 h-2 rounded-full bg-red-500"></span>
+          <span>Predatory QuickRupee (0/100)</span>
+        </button>
+        <button id="btn-preset-borderline" class="px-2.5 py-1 text-xs rounded-lg bg-slate-800 hover:bg-slate-700 text-amber-400 border border-amber-500/30 flex items-center space-x-1.5 transition">
+          <span class="w-2 h-2 rounded-full bg-amber-500"></span>
+          <span>Borderline FinTech (35/100)</span>
+        </button>
+        <button id="btn-preset-compliant" class="px-2.5 py-1 text-xs rounded-lg bg-slate-800 hover:bg-slate-700 text-emerald-400 border border-emerald-500/30 flex items-center space-x-1.5 transition">
+          <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+          <span>Compliant Bank KFS (100/100)</span>
+        </button>
+      </div>
+
+      <button id="btn-custom-analyze" class="px-3 py-1 text-xs rounded-lg bg-indigo-600/30 hover:bg-indigo-600/50 text-indigo-300 border border-indigo-500/40 font-medium flex items-center space-x-1.5 transition">
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+        <span>Upload / Paste Custom Contract</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Agent Execution Tracker (Live Animated Flow) -->
+  <div class="bg-slate-950/80 border-b border-slate-900 px-6 py-2">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between text-xs text-slate-400 gap-2">
+      <span class="text-[11px] font-mono text-slate-500">PIPELINE:</span>
+      <div id="agent-step-1" class="flex items-center space-x-1.5">
+        <span class="status-dot w-2 h-2 rounded-full bg-emerald-500"></span>
+        <span>1. Clause Parser</span>
+      </div>
+      <span class="text-slate-600">&rarr;</span>
+      <div id="agent-step-2" class="flex items-center space-x-1.5">
+        <span class="status-dot w-2 h-2 rounded-full bg-emerald-500"></span>
+        <span>2. Regulatory Retriever</span>
+      </div>
+      <span class="text-slate-600">&rarr;</span>
+      <div id="agent-step-3" class="flex items-center space-x-1.5">
+        <span class="status-dot w-2 h-2 rounded-full bg-emerald-500"></span>
+        <span>3. Compliance Auditor</span>
+      </div>
+      <span class="text-slate-600">&rarr;</span>
+      <div id="agent-step-4" class="flex items-center space-x-1.5">
+        <span class="status-dot w-2 h-2 rounded-full bg-emerald-500"></span>
+        <span class="font-semibold text-indigo-400">4. Citation Verifier (The Judge)</span>
+      </div>
+      <span class="text-slate-600">&rarr;</span>
+      <div id="agent-step-5" class="flex items-center space-x-1.5">
+        <span class="status-dot w-2 h-2 rounded-full bg-emerald-500"></span>
+        <span>5. Dual Explainer</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Split-Screen Workspace -->
+  <main class="flex-1 max-w-7xl mx-auto w-full p-4 md:p-6 grid grid-cols-1 lg:grid-cols-12 gap-6">
+
+    <!-- Left Column: Raw Loan Agreement Viewer (7 cols) -->
+    <div class="lg:col-span-7 flex flex-col glass-panel rounded-2xl overflow-hidden border border-slate-800 shadow-xl max-h-[82vh]">
+      <!-- Header -->
+      <div class="p-3.5 bg-slate-900/90 border-b border-slate-800 flex items-center justify-between">
+        <div class="flex items-center space-x-2">
+          <svg class="w-4 h-4 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+          <span class="text-xs font-semibold text-slate-200">Contract Document Viewer</span>
+        </div>
+        <div class="text-[11px] text-slate-400">
+          Total Clauses: <span id="count-clauses" class="font-mono text-indigo-400 font-bold">0</span>
+        </div>
+      </div>
+
+      <!-- Scrollable Clauses -->
+      <div id="contract-clauses-container" class="flex-1 overflow-y-auto p-4 space-y-3 font-mono text-xs">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+
+    <!-- Right Column: Safety Meter & Agent Findings (5 cols) -->
+    <div class="lg:col-span-5 flex flex-col space-y-4 max-h-[82vh] overflow-y-auto pr-1">
+
+      <!-- Safety Score Gauge Card -->
+      <div class="glass-panel p-4 rounded-2xl border border-slate-800 shadow-lg">
+        <div class="flex items-center justify-between mb-2">
+          <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Regulatory Safety Score</span>
+          <span id="risk-badge" class="px-2.5 py-1 text-xs font-bold rounded-full bg-red-500/20 text-red-400 border border-red-500/40">
+            EVALUATING...
+          </span>
+        </div>
+
+        <div class="flex items-baseline space-x-2 mb-2">
+          <span id="risk-score-value" class="text-3xl font-extrabold tracking-tight text-white font-mono">--</span>
+          <span class="text-slate-500 text-sm">/ 100</span>
+          <span id="risk-score-level" class="ml-auto text-xs font-semibold text-red-400"></span>
+        </div>
+
+        <!-- Meter bar -->
+        <div class="w-full h-2 bg-slate-800 rounded-full overflow-hidden mb-3">
+          <div id="risk-meter-bar" class="h-full bg-red-500 transition-all duration-700" style="width: 0%;"></div>
+        </div>
+
+        <!-- Metrics pills -->
+        <div class="grid grid-cols-2 gap-2 text-[11px]">
+          <div class="p-2 rounded-lg bg-slate-900/80 border border-slate-800 flex items-center justify-between">
+            <span class="text-slate-400">Confirmed Flags:</span>
+            <span id="count-verified-flags" class="font-mono font-bold text-red-400">0</span>
+          </div>
+          <div class="p-2 rounded-lg bg-slate-900/80 border border-slate-800 flex items-center justify-between">
+            <span class="text-slate-400">Hallucinations Blocked:</span>
+            <span id="count-rejected-flags" class="font-mono font-bold text-emerald-400">0</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Findings & Inspector Panel -->
+      <div class="glass-panel flex-1 rounded-2xl border border-slate-800 shadow-lg flex flex-col overflow-hidden">
+        <!-- Navigation Tabs -->
+        <div class="flex items-center border-b border-slate-800 px-3 bg-slate-900/60">
+          <button id="tab-btn-violations" class="py-2.5 px-3 text-xs font-semibold border-b-2 border-indigo-500 text-indigo-400">
+            Verified Findings
+          </button>
+          <button id="tab-btn-verifier" class="py-2.5 px-3 text-xs font-medium text-slate-400 hover:text-slate-200 border-b-2 border-transparent flex items-center space-x-1">
+            <span>Verifier Inspector</span>
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+          </button>
+          <button id="tab-btn-clauses" class="py-2.5 px-3 text-xs font-medium text-slate-400 hover:text-slate-200 border-b-2 border-transparent">
+            Clause Index
+          </button>
+        </div>
+
+        <!-- Tab Body -->
+        <div id="inspector-content-area" class="p-4 overflow-y-auto flex-1">
+          <!-- Injected via JavaScript -->
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Custom Contract Modal -->
+  <div id="custom-modal" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4 hidden">
+    <div class="glass-panel max-w-2xl w-full rounded-2xl border border-slate-700 p-6 shadow-2xl">
+      <div class="flex items-center justify-between mb-4">
+        <h3 class="text-sm font-bold text-white">Upload / Paste Digital Loan Agreement</h3>
+        <button id="btn-close-modal" class="text-slate-400 hover:text-slate-200 text-lg">&times;</button>
+      </div>
+      <p class="text-xs text-slate-400 mb-3">Paste the text of any loan agreement, terms & conditions, or Key Fact Statement to test against the regulatory compliance engine.</p>
+      <textarea id="custom-text-input" rows="12" class="w-full rounded-xl bg-slate-900 border border-slate-700 p-3 text-xs font-mono text-slate-200 focus:outline-none focus:border-indigo-500" placeholder="Paste loan agreement text here..."></textarea>
+      <div class="mt-4 flex justify-end space-x-3">
+        <button onclick="document.getElementById('custom-modal').classList.add('hidden')" class="px-4 py-2 text-xs font-medium text-slate-400 hover:text-slate-200">Cancel</button>
+        <button id="btn-run-custom" class="px-4 py-2 text-xs font-semibold rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white shadow-lg shadow-indigo-600/30">Run Agentic Audit</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

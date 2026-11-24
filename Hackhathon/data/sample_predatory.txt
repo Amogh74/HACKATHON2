@@ -1,0 +1,35 @@
+DIGITAL LOAN AGREEMENT AND SANCTION TERMS
+Platform Application: QuickRupee Instant Cash
+Operating Entity: FastCash Global Technology Solutions Private Limited
+
+PREAMBLE & APPOINTMENT
+This Loan Agreement ("Agreement") is executed on this 24th day of November, 2026, by and between FastCash Global Technology Solutions Pvt. Ltd. (hereinafter referred to as "the Lender" or "Company") and the individual who accepts these terms via electronic checkbox verification ("Borrower").
+
+CLAUSE 1: FACILITY AMOUNT AND INTEREST COMPUTATION
+1.1 The Company agrees to advance a micro-credit credit limit of INR 15,000 (Fifteen Thousand Rupees) to the Borrower for a tenure of 14 calendar days.
+1.2 The Borrower agrees to pay an administrative platform fee of 22% upfront (deducted directly from disbursal amount).
+1.3 Interest shall be computed at a nominal daily rate of 1.25% per day. The Borrower acknowledges that conventional Annual Percentage Rate (APR) calculations do not apply to short-term micro-advances and no separate Key Fact Statement (KFS) is required.
+
+CLAUSE 2: DISBURSEMENT AND REPAYMENT MECHANISM
+2.1 The net disbursal sum of INR 11,700 shall be remitted to the Borrower's digital wallet or nominated UPI handle.
+2.2 Repayment of principal and accrued charges totaling INR 17,625 shall be due strictly on Day 14.
+2.3 The Borrower expressly agrees that repayment shall be remitted via payment links or direct UPI transfers to designated third-party recovery accounts, freelance agency collection handles, or offshore merchant payment gateways nominated by the Company via WhatsApp or SMS.
+
+CLAUSE 3: DEVICE ACCESS AND DATA HARVESTING PERMISSIONS
+3.1 As a mandatory condition precedent for risk underwriting and identity verification, the Borrower hereby grants the Company irrevocable, continuous access to the Borrower's mobile device resources, including the full Contact Phonebook, Call History Logs, Device Storage, and Media Photo Gallery.
+3.2 In the event of default or delayed repayment, the Borrower authorizes the Company to download, store, and contact individuals listed in the Borrower's address book and social contact list to verify the Borrower's whereabouts and facilitate recovery.
+
+CLAUSE 4: RECOVERY PRACTICES AND THIRD-PARTY COMMUNICATIONS
+4.1 The Borrower waives all rights of confidentiality regarding their financial indebtedness.
+4.2 In case of default exceeding 24 hours, the Company and its authorized external field recovery agents reserve the unfettered right to contact the Borrower's employer, human resources department, spouse, immediate family members, and social media contacts via telephone, messaging, or physical home/workplace visitation at any hour deemed necessary by the collection team.
+
+CLAUSE 5: COOLING-OFF PERIOD WAIVER
+5.1 Due to the automated instant-disbursal nature of this micro-credit facility, the Borrower explicitly agrees to waive any statutory 3-day cooling-off or look-up period.
+5.2 The agreement becomes irrevocably binding immediately upon tapping 'Accept', and no cancellation, withdrawal, or early prepayment without 100% total fee forfeiture shall be entertained.
+
+CLAUSE 6: UNILATERAL CREDIT ENHANCEMENT
+6.1 The Company reserves the unilateral discretion to automatically increase the Borrower's credit limit and corresponding processing charges upon successful repayment of any installment, without requiring separate re-affirmation or explicit written consent from the Borrower.
+
+CLAUSE 7: DISPUTES AND GRIEVANCE REDRESSAL
+7.1 In the event of any query, the Borrower may write to an automated email bot at support@quickrupee-helpdesk.cc. No telephone escalation or designated physical grievance officer is maintained.
+7.2 The Borrower agrees that disputes shall be resolved exclusively through private non-binding arbitration seated in a foreign jurisdiction chosen by the Company.

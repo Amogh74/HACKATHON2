@@ -1,0 +1,28 @@
+REVOLVING CREDIT LINE AGREEMENT
+Service Provider: FlexiPay FinTech Services Pvt Ltd
+Co-Lending Partner: Northern Heights Capital NBFC
+
+TERMS OF REVOLVING FACILITY
+Date: 15th November 2026
+Borrower ID: FLX-994821
+
+SECTION 1: CREDIT LINE AND COST
+1.1 FlexiPay grants a pre-approved digital credit line of up to INR 50,000.
+1.2 Monthly carrying cost is charged at 3.5% per month on drawn balance. Processing fees of INR 999 plus GST apply on each drawdown. Note: An annualized aggregate percentage cost summary is available upon separate email request to credit-ops@flexipay.in, but is not attached directly herein.
+
+SECTION 2: DISBURSEMENT AND PAYMENT CHANNELS
+2.1 All loan disbursements will be deposited directly into the Borrower's linked primary savings account.
+2.2 Repayment must be executed through the official FlexiPay mobile application gateway or automated NACH mandate registered with Northern Heights Capital NBFC.
+
+SECTION 3: MOBILE PERMISSIONS AND SECURITY
+3.1 The FlexiPay mobile application requires access to the camera and precise GPS device location at the time of onboarding strictly for one-time video KYC compliance.
+3.2 The app does not access contact phonebooks or personal gallery files.
+
+SECTION 4: LIMIT REVISION
+4.1 Based on ongoing proprietary behavioral scoring algorithms, FlexiPay may periodically and automatically increase the Borrower's credit limit up to INR 1,50,000 without requiring further digital signature or separate explicit opt-in confirmation.
+
+SECTION 5: CANCELLATION AND COOLING-OFF
+5.1 The Borrower acknowledges that credit lines once drawn cannot be cancelled or exited under any cooling-off arrangement once funds have cleared the partner clearing house. Any early closure will attract standard premature termination fees of 4%.
+
+SECTION 6: CUSTOMER GRIEVANCES
+6.1 Customer complaints can be submitted via the app ticket system or by emailing grievances@northernheightscap.com. A ticket response will be issued within 45 working days. Nodal officer contact phone numbers are not published on the application interface.
